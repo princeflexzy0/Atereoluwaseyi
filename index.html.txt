@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Atere Oluwaseyi Emmanuel - Portfolio</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 40px; max-width: 800px; color: #222; }
+  h1, h2 { color: #004080; }
+  a { color: #0066cc; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  section { margin-bottom: 40px; }
+  ul { padding-left: 20px; }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Atere Oluwaseyi Emmanuel</h1>
+    <p>Game Tester | QA Analyst | Podcast Promoter | Project Writer</p>
+    <p>Email: <a href="mailto:Emmanuelatere44@gmail.com">Emmanuelatere44@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/emmanuel-atere-908772209" target="_blank">linkedin.com/in/emmanuel-atere-908772209</a></p>
+  </header>
+
+  <section>
+    <h2>ABOUT ME</h2>
+    <p>Experienced software tester and digital media promoter with over 3 years working remotely in QA, game testing, podcast marketing, and project documentation.</p>
+  </section>
+
+  <section>
+    <h2>SKILLS</h2>
+    <ul>
+      <li>Manual & Automated Testing, Bug Reporting</li>
+      <li>Agile & Scrum Methodologies</li>
+      <li>Social Media Marketing & SEO for Podcasts</li>
+      <li>Technical Writing & Documentation</li>
+      <li>Tools: JIRA, TestRail, Selenium, Postman</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>PROJECTS</h2>
+    <h3>Multiplayer Mobile Game Testing – “Sky Legends”</h3>
+    <p>Performed comprehensive bug testing to improve gameplay and UI before launch.</p>
+
+    <h3>Podcast Growth Campaign – “TechTalk Weekly”</h3>
+    <p>Increased listenership by 45% via targeted marketing strategies.</p>
+
+    <h3>Project Documentation for CRM Upgrade</h3>
+    <p>Produced clear proposals and manuals to support software upgrade.</p>
+
+    <h3>Beta Testing – “Pixel Quest”</h3>
+    <p>Provided feedback on gameplay mechanics and bugs for indie game release.</p>
+  </section>
+
+  <section>
+    <h2>CONTACT</h2>
+    <p>Email me at <a href="mailto:Emmanuelatere44@gmail.com">Emmanuelatere44@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Atere Oluwaseyi Emmanuel</p>
+  </footer>
+</body>
+</html>
