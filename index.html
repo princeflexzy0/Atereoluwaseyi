@@ -578,19 +578,149 @@
             color: var(--text-dim);
         }
 
-        @media (max-width: 768px) {
+        /* Mobile Responsive - All Screen Sizes */
+        
+        /* Small phones (320px - 480px) */
+        @media (max-width: 480px) {
+            nav .container {
+                padding: 1rem;
+                flex-wrap: wrap;
+            }
+
+            nav .logo {
+                font-size: 1.2rem;
+            }
+
             nav ul {
-                gap: 1rem;
-                font-size: 0.9rem;
+                gap: 0.5rem;
+                font-size: 0.75rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                padding: 1rem;
+                min-height: auto;
             }
 
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.75rem !important;
+                line-height: 1.2;
+            }
+
+            .hero .subtitle {
+                font-size: 1rem !important;
+                line-height: 1.4;
             }
 
             .profile-image, .profile-placeholder {
-                width: 150px;
-                height: 150px;
+                width: 120px;
+                height: 120px;
+                font-size: 3rem;
+            }
+
+            .btn {
+                padding: 0.75rem 1.25rem;
+                font-size: 0.9rem;
+                width: 100%;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .section-title {
+                font-size: 1.75rem;
+            }
+
+            .about-content p {
+                font-size: 1rem;
+            }
+
+            .education-card,
+            .stat-card,
+            .skill-card,
+            .cert-card,
+            .project-card,
+            .contact-card {
+                padding: 1.25rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+
+            .skills-grid,
+            .projects-grid,
+            .contact-grid,
+            .cert-grid,
+            .stats {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+
+            .project-links {
+                flex-direction: column;
+            }
+
+            .project-link {
+                text-align: center;
+            }
+
+            .contact-card svg {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+        /* Medium phones (481px - 767px) */
+        @media (min-width: 481px) and (max-width: 767px) {
+            nav .container {
+                padding: 1.25rem 1.5rem;
+            }
+
+            nav .logo {
+                font-size: 1.3rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+                font-size: 0.85rem;
+            }
+
+            .hero {
+                padding: 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem !important;
+            }
+
+            .hero .subtitle {
+                font-size: 1.2rem !important;
+            }
+
+            .profile-image, .profile-placeholder {
+                width: 140px;
+                height: 140px;
+            }
+
+            .btn {
+                padding: 0.85rem 1.5rem;
+                font-size: 0.95rem;
+            }
+
+            section {
+                padding: 4rem 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
             }
 
             .skills-grid,
@@ -598,6 +728,11 @@
             .contact-grid,
             .cert-grid {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .project-links {
@@ -605,8 +740,177 @@
             }
         }
 
+        /* Tablets (768px - 1024px) */
+        @media (min-width: 768px) and (max-width: 1024px) {
+            nav .container {
+                padding: 1.5rem;
+            }
+
+            nav ul {
+                gap: 1.5rem;
+            }
+
+            .hero {
+                padding: 2rem 1.5rem;
+            }
+
+            .profile-image, .profile-placeholder {
+                width: 160px;
+                height: 160px;
+            }
+
+            section {
+                padding: 4.5rem 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .projects-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .cert-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* General mobile fixes */
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .about-content,
+            .education-card {
+                max-width: 100%;
+            }
+
+            .hero::before,
+            .hero::after {
+                width: 300px;
+                height: 300px;
+            }
+
+            .tag {
+                font-size: 0.8rem;
+                padding: 0.35rem 0.7rem;
+            }
+
+            .project-tech {
+                gap: 0.4rem;
+            }
+
+            .cert-icon {
+                font-size: 1.5rem;
+            }
+
+            .cert-info h4 {
+                font-size: 1rem;
+            }
+
+            .cert-info .cert-issuer,
+            .cert-info .cert-year {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Landscape mode on phones */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .hero {
+                min-height: auto;
+                padding: 2rem 1rem;
+            }
+
+            .profile-image, .profile-placeholder {
+                width: 100px;
+                height: 100px;
+            }
+
+            nav .container {
+                padding: 0.75rem 1rem;
+            }
+        }
+
+        /* Very small screens (iPhone SE, old Android) */
+        @media (max-width: 360px) {
+            nav .logo {
+                font-size: 1rem;
+            }
+
+            nav ul {
+                font-size: 0.7rem;
+                gap: 0.4rem;
+            }
+
+            .hero h1 {
+                font-size: 1.5rem !important;
+            }
+
+            .hero .subtitle {
+                font-size: 0.9rem !important;
+            }
+
+            .profile-image, .profile-placeholder {
+                width: 100px;
+                height: 100px;
+                font-size: 2.5rem;
+            }
+
+            .btn {
+                padding: 0.6rem 1rem;
+                font-size: 0.85rem;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2rem;
+            }
+        }
+
+        /* iPhone 12/13/14 Pro Max and similar */
+        @media (min-width: 390px) and (max-width: 430px) {
+            .hero h1 {
+                font-size: 2.25rem !important;
+            }
+
+            .profile-image, .profile-placeholder {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
         html {
             scroll-behavior: smooth;
+        }
+
+        /* Ensure images scale properly */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Prevent horizontal scroll on mobile */
+        body {
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        .container {
+            max-width: 100%;
+            overflow-x: hidden;
         }
     </style>
 </head>
@@ -650,7 +954,7 @@
                 <div class="education-card">
                     <h3>🎓 Federal University of Technology Akure</h3>
                     <p class="degree">B.Tech in Industrial Chemistry</p>
-                    <p class="details">Second Class Lower Division (2.2) | Graduated 2024<br>Ondo State, Nigeria</p>
+                    <p class="details">Second Class | Graduated 2024<br>Ondo State, Nigeria</p>
                 </div>
 
                 <div class="certifications">
@@ -848,6 +1152,33 @@
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
             <div class="projects-grid">
+                <div class="project-card live">
+                    <div class="project-content">
+                        <h3>🔐 Enterprise Backend API System</h3>
+                        <p>Production-grade Node.js/Express backend with comprehensive security hardening, PM2 cluster mode, Supabase database, and multi-service integration. Features JWT authentication, payment processing (Stripe/PayPal), AI orchestration, file handling with S3, messaging (SendGrid/Twilio), and workflow automation. Deployed on Railway with zero-downtime updates.</p>
+                        <div class="project-tech">
+                            <span class="tag">Node.js 20</span>
+                            <span class="tag">Express</span>
+                            <span class="tag">PM2 Cluster</span>
+                            <span class="tag">Supabase</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">Redis</span>
+                            <span class="tag">Docker</span>
+                            <span class="tag">Stripe</span>
+                            <span class="tag">PayPal</span>
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">S3</span>
+                            <span class="tag">JWT</span>
+                            <span class="tag">HMAC</span>
+                            <span class="tag">Railway</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://bubble-backend-api-production.up.railway.app" target="_blank" class="project-link">🌐 View API →</a>
+                            <a href="https://bubble-backend-api-production.up.railway.app/api/v1/health" target="_blank" class="project-link">📊 Health Check →</a>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="project-card live">
                     <div class="project-content">
                         <h3>🎨 AI-Powered Creative Workspace</h3>
